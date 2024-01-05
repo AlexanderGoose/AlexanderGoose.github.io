@@ -1,13 +1,15 @@
 div {
   font-family: 'Inconsolata', monospace;
   font-size: 16px;
+  margin: 0 10px;
 }
 
 .Button {
+  font-family: 'Inconsolata', monospace;
   display: inline-block;
   padding: 10px 15px;
   text-decoration: none;
-  background-color: #3498db;
+  background-color: #3f760f;
   color: #fff;
   border-radius: 5px;
   transition: background-color 0.3s ease;
@@ -15,8 +17,29 @@ div {
 
 div.job-experience {
   font-size: 16px;
+  margin: 0 10px;
+}
+
+div.CV {
+  margin: 0 10px;
 }
 
 p.experience-text {
   white-space: pre-line;
+}
+
+@media screen and (max-width: 1000px)
+{
+  div {
+    font-size: 24px;
+  }
+
+  div.CV {
+    font-size: 24px;
+  }
+
+  div.job-experience {
+    font-size: 24px;
+  }
+
 }

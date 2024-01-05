@@ -1,2 +1,3 @@
-# AlexanderGoose.github.io
-# AlexanderGoose.github.io
+Code for my website
+
+Still working out kinks with the bluehost serve I think...

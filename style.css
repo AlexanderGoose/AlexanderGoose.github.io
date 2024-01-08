@@ -8,8 +8,6 @@ div {
 
 body {
   background-color: #355E3B; 
-
-  
 }
 
 .home {
@@ -40,13 +38,13 @@ div.job-experience {
   margin: 0 10px;
   line-height: 1.5;
   position: relative;
-  left: -300px;
+  left: -100%;
   animation: enterFromLeft 1s forwards;
 }
 
 @keyframes enterFromLeft {
   from {
-    left: -300px; /* Starts off-screen */
+    left: -100%; /* Starts off-screen */
   }
   to {
     left: 0; /* Moves to the left edge */
@@ -54,15 +52,16 @@ div.job-experience {
 }
 
 .links {
-  position: relative;
-  bottom: -1000px;
+  position: absolute;
+  bottom: -300px;
+  margin: 50px 0 0 0;
   animation: comeUpFromBottom 1s forwards;
   animation-delay: 1s;
 }
 
 @keyframes comeUpFromBottom {
   from {
-    bottom: -1000px;
+    bottom: -300px;
   }
   to {
     bottom: 0;
@@ -81,21 +80,6 @@ p.experience-text {
   white-space: pre-line;
 }
 
-@media screen and (max-width: 1000px)
-{
-  div {
-    font-size: 24px;
-  }
-
-  div.CV {
-    font-size: 24px;
-  }
-
-  div.job-experience {
-    font-size: 24px;
-  }
-
-}
 
 
 .blinking-cursor {
@@ -117,4 +101,20 @@ p.experience-text {
   50% {
     opacity: 0;
   }
+}
+
+@media screen and (max-width: 600px)
+{
+  div {
+    font-size: 20px;
+  }
+
+  div.CV {
+    font-size: 24px;
+  }
+
+  div.job-experience {
+    font-size: 24px;
+  }
+
 }

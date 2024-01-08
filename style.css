@@ -1,45 +1,80 @@
 div {
   font-family: 'Inconsolata', monospace;
+  font-weight: 400;
   font-size: 16px;
   margin: 0 10px;
+  color: white;
 }
 
 body {
-  background-color: #F5F5F5;
+  background-color: #355E3B; 
+
+  
 }
 
-.Button {
-  font-family: 'Inconsolata', monospace;
-  display: inline-block;
-  padding: 10px 15px;
-  text-decoration: none;
-  background-color: #3f760f;
-  color: #fff;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+.home {
+  position: relative;
+  left: -300px;
+  animation: enterFromLeft 2s forwards;
 }
+
 
 a {
-  border: 1px solid #008B8B;
-  background: #008B8B;
+  border: 1px solid black;
+  background: #5F9EA0;
   padding: 10px;
-  color: white;
+  color: black;
   text-decoration: none;
   border-radius: 6px;
+  transition: background 500ms ease;
 }
 
 a:hover {
+  border: black;
   background: white;
-  color: #556B2F;
+  color: black;
 }
 
 div.job-experience {
   font-size: 16px;
   margin: 0 10px;
+  line-height: 1.5;
+  position: relative;
+  left: -300px;
+  animation: enterFromLeft 1s forwards;
+}
+
+@keyframes enterFromLeft {
+  from {
+    left: -300px; /* Starts off-screen */
+  }
+  to {
+    left: 0; /* Moves to the left edge */
+  }
+}
+
+.links {
+  position: relative;
+  bottom: -1000px;
+  animation: comeUpFromBottom 1s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes comeUpFromBottom {
+  from {
+    bottom: -1000px;
+  }
+  to {
+    bottom: 0;
+  }
 }
 
 div.CV {
   margin: 0 10px;
+  line-height: 2;
+  position: relative;
+  left: -300px;
+  animation: enterFromLeft 1s forwards;
 }
 
 p.experience-text {
@@ -60,4 +95,26 @@ p.experience-text {
     font-size: 24px;
   }
 
+}
+
+
+.blinking-cursor {
+  position: relative;
+}
+
+.blinking-cursor::after {
+  content: '|'; /* Display the cursor (you can use any character or icon) */
+  animation: blink 1.5s infinite; /* Animation duration and infinite looping */
+  color: #fff; /* Cursor color */
+  margin-left: 2px;
+  font-size: 1em;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }

@@ -15,20 +15,20 @@ body {
 
 
 
-.home {
+/* .home {
   position: relative;
   left: -300px;
   animation: enterFromLeft 2s forwards;
-}
+} */
 
-@keyframes enterFromLeft {
+/* @keyframes enterFromLeft {
   from {
-    left: -250px; /* Starts off-screen */
+    left: -250px; 
   }
   to {
-    left: 0; /* Moves to the left edge */
+    left: 0; 
   }
-}
+} */
 
 
 

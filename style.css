@@ -23,7 +23,7 @@ body {
 
 @keyframes enterFromLeft {
   from {
-    left: -300px; /* Starts off-screen */
+    left: -250px; /* Starts off-screen */
   }
   to {
     left: 0; /* Moves to the left edge */
@@ -55,10 +55,10 @@ a:hover {
 div.job-experience {
   font-size: 16px;
   margin: 0 10px;
-  line-height: 1.5;
+  /* line-height: 1.5;
   position: relative;
   left: -100%;
-  animation: enterFromLeft 1s forwards;
+  animation: enterFromLeft 1s forwards; */
 }
 
 
@@ -83,10 +83,12 @@ div.job-experience {
 div.CV {
   margin: 0 10px;
   line-height: 2;
-  position: relative;
+  /* position: relative;
   left: -300px;
-  animation: enterFromLeft 1s forwards;
+  animation: enterFromLeft 1s forwards; */
 }
+
+
 
 p.experience-text {
   white-space: pre-line;

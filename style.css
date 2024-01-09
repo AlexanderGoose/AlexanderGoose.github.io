@@ -1,20 +1,35 @@
+
+
 div {
   font-family: 'Inconsolata', monospace;
-  font-weight: 400;
   font-size: 16px;
   margin: 0 10px;
   color: white;
 }
 
+
+
 body {
   background-color: #355E3B; 
 }
+
+
 
 .home {
   position: relative;
   left: -300px;
   animation: enterFromLeft 2s forwards;
 }
+
+@keyframes enterFromLeft {
+  from {
+    left: -300px; /* Starts off-screen */
+  }
+  to {
+    left: 0; /* Moves to the left edge */
+  }
+}
+
 
 
 a {
@@ -27,11 +42,15 @@ a {
   transition: background 500ms ease;
 }
 
+
+
 a:hover {
   border: black;
   background: white;
   color: black;
 }
+
+
 
 div.job-experience {
   font-size: 16px;
@@ -42,14 +61,7 @@ div.job-experience {
   animation: enterFromLeft 1s forwards;
 }
 
-@keyframes enterFromLeft {
-  from {
-    left: -100%; /* Starts off-screen */
-  }
-  to {
-    left: 0; /* Moves to the left edge */
-  }
-}
+
 
 .links {
   position: absolute;

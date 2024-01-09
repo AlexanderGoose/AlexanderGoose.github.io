@@ -18,7 +18,20 @@ a {
   font-family: 'Inconsolata', monospace;
   font-size: 16px;
   margin-left: 25%;
-  margin-right: 25%
+  margin-right: 25%;
+}
+
+.home {
+  position: relative;
+  left: -100%;
+  animation: enterFromLeft 2s forwards;
+}
+
+
+.links {
+  position: absolute;
+  bottom: -100%;
+  animation: comeUpFromBottom 2s forwards;
 }
 
 
@@ -32,7 +45,11 @@ a:hover {
   font-family: 'Inconsolata', monospace;
   font-size: 16px;
   margin-left: 25%;
-  margin-right: 25%
+  margin-right: 25%;
+
+  position: relative;
+  left: -100%;
+  animation: enterFromLeft 2s forwards;
 }
 
 
@@ -40,12 +57,36 @@ a:hover {
 .cv-container {
   margin-top: 20px;
   margin-left: 25%;
-  margin-right: 25%
+  margin-right: 25%;
+
+  position: relative;
+  left: -100%;
+  animation: enterFromLeft 2s forwards;
 }
 
 div.CV {
   margin: 0 10px;
   line-height: 2;
+}
+
+
+@keyframes enterFromLeft {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+
+@keyframes comeUpFromBottom {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 0;
+  }
 }
 
 
@@ -64,12 +105,12 @@ div.CV {
 
   .cv-container {
     font-size: 22px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 
   .CV {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .res-container {

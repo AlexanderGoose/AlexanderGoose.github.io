@@ -1,13 +1,6 @@
 div {
   font-family: 'Inconsolata', monospace;
   font-size: 16px;
-  margin: 0 10px;
-  color: white;
-}
-
-
-body {
-  background-color: #355E3B; 
 }
 
 
@@ -21,6 +14,13 @@ a {
   transition: background 500ms ease;
 }
 
+.homepage {
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
+  margin-left: 25%;
+  margin-right: 25%
+}
+
 
 a:hover {
   border: black;
@@ -28,12 +28,20 @@ a:hover {
   color: black;
 }
 
-
-div.job-experience {
+.res-container {
+  font-family: 'Inconsolata', monospace;
   font-size: 16px;
-  margin: 0 10px;
+  margin-left: 25%;
+  margin-right: 25%
 }
 
+
+
+.cv-container {
+  margin-top: 20px;
+  margin-left: 25%;
+  margin-right: 25%
+}
 
 div.CV {
   margin: 0 10px;
@@ -41,17 +49,36 @@ div.CV {
 }
 
 
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 768px)
 {
-  div {
-    font-size: 20px;
+
+  .homepage {
+    font-size: 22px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
-  div.CV {
-    font-size: 24px;
+  .home {
+    font-size: 22px;
   }
 
-  div.job-experience {
-    font-size: 24px;
+  .cv-container {
+    font-size: 22px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .CV {
+    font-size: 22px;
+  }
+
+  .res-container {
+    font-size: 22px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .job-experience {
+    font-size: 22px;
   }
 }

@@ -1,25 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const pageLinks = document.querySelectorAll('.page-link');
-    const overlay = document.querySelector('.overlay');
-  
-    pageLinks.forEach(link => {
-      link.addEventListener('click', function(event) {
-        event.preventDefault();
 
-        document.body.classList.add('no-scroll');
-  
-        // Slide in the black overlay from the right
-        overlay.style.left = '0';
-        overlay.style.opacity = '1';
-  
-        // Navigate to the new page after a delay (adjust as needed)
-        const nextPage = this.getAttribute('href');
-        setTimeout(() => {
-          window.location.href = nextPage;
-        }, 500); // 500 milliseconds (0.5 seconds) matches the transition duration
-      });
-    });
-  });
 
 
 

@@ -1,5 +1,3 @@
-
-
 div {
   font-family: 'Inconsolata', monospace;
   font-size: 16px;
@@ -8,11 +6,9 @@ div {
 }
 
 
-
 body {
   background-color: #355E3B; 
 }
-
 
 
 a {
@@ -26,13 +22,11 @@ a {
 }
 
 
-
 a:hover {
   border: black;
   background: white;
   color: black;
 }
-
 
 
 div.job-experience {
@@ -41,59 +35,13 @@ div.job-experience {
 }
 
 
-
-.links {
-  position: absolute;
-  bottom: -300px;
-  margin: 50px 0 0 0;
-  animation: comeUpFromBottom 1s forwards;
-  animation-delay: 1s;
-}
-
-@keyframes comeUpFromBottom {
-  from {
-    bottom: -1000px;
-  }
-  to {
-    bottom: 0;
-  }
-}
-
 div.CV {
   margin: 0 10px;
   line-height: 2;
 }
 
 
-
-p.experience-text {
-  white-space: pre-line;
-}
-
-
-
-.blinking-cursor {
-  position: relative;
-}
-
-.blinking-cursor::after {
-  content: '|'; /* Display the cursor (you can use any character or icon) */
-  animation: blink 1.5s infinite; /* Animation duration and infinite looping */
-  color: #fff; /* Cursor color */
-  margin-left: 2px;
-  font-size: 1em;
-}
-
-@keyframes blink {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-
-@media screen and (max-width: 600px)
+@media screen and (max-width: 1000px)
 {
   div {
     font-size: 20px;
@@ -106,5 +54,4 @@ p.experience-text {
   div.job-experience {
     font-size: 24px;
   }
-
 }

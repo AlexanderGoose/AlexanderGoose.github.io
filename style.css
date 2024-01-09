@@ -4,6 +4,14 @@ body {
   background-color: #F5F5F5;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+
 /* BUTTON - links to other pages*/
 /*  stored within 'links' */
 a {
@@ -91,6 +99,19 @@ a:hover {
   color: black;
   margin-left: 2px;
   font-size: 1em;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  z-index: 1000; /* Ensure it's above other content */
 }
 
 

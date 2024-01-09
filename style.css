@@ -4,13 +4,13 @@ body {
   background-color: #F5F5F5;
 }
 
-body.no-scroll {
+/* body.no-scroll {
   overflow: hidden;
 }
 
 canvas {
   display: block;
-}
+} */
 
 /* BUTTON - links to other pages*/
 /*  stored within 'links' */
@@ -101,7 +101,7 @@ a:hover {
   font-size: 1em;
 }
 
-
+/* 
 .overlay {
   position: fixed;
   top: 0;
@@ -111,8 +111,8 @@ a:hover {
   background-color: black;
   opacity: 0;
   transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  z-index: 1000; /* Ensure it's above other content */
-}
+  z-index: 1000; 
+} */
 
 
 @keyframes blink {

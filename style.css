@@ -6,7 +6,8 @@ html, body {
 }
 
 body {
-  background-color: #5F9EA0;
+  background-color: #2F4F4F;
+  color: white;
   font-size: 18px;
   font-family: 'Inconsolata', monospace;
 }

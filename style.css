@@ -12,10 +12,6 @@ body {
 }
 
 .navbar {
-  /* display: flex; */
-  /* justify-content: space-around; */
-  /* margin-left: 20%; */
-  /* margin-right: 20%; */
   align-items: center;
   background-color: white;
   width: 100%;
@@ -57,6 +53,7 @@ body {
   height: 50px;
 }
 
+
 @media screen and (max-width: 768px) {
   .navbar-items-container,
   .header,
@@ -68,163 +65,5 @@ body {
   .updates-container {
     margin-top: 50px;
   }
-
 }
 
-/* body {
-  background-color: #F5F5F5;
-}
-
-
-a {
-  border: 1px solid black;
-  background: #355E3B;
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background 500ms ease;
-  
-}
-
-a:hover {
-  border: 1px solid black;
-  background: white;
-  color: #355E3B;
-}
-
-.links {
-  position: absolute;
-  bottom: -100%;
-  animation: comeUpFromBottom 2s forwards;
-}
-
-
-.homepage {
-  font-family: 'Inconsolata', monospace;
-  font-size: 16px;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-.home {
-  position: relative;
-  left: -100%;
-  animation: enterFromLeft 2s forwards;
-}
-
-
-
-
-.res-container {
-  font-family: 'Inconsolata', monospace;
-  font-size: 16px;
-  margin-left: 25%;
-  margin-right: 25%;
-
-  position: relative;
-  left: -100%;
-  animation: enterFromLeft 2s forwards;
-}
-
-
-.job-experience {
-  line-height: 1.75;
-}
-
-
-.cv-container {
-  font-family: 'Inconsolata', monospace;
-  font-size: 16px;
-  margin-top: 20px;
-  margin-left: 25%;
-  margin-right: 25%;
-
-  position: relative;
-  left: -100%;
-  animation: enterFromLeft 2s forwards;
-}
-
-.CV {
-  margin: 0 10px;
-  line-height: 1.75;
-}
-
-
-.blinking-cursor {
-  position: relative;
-}
-
-.blinking-cursor::after {
-  content: "|";
-  animation: blink 1.5s infinite;
-  color: black;
-  margin-left: 2px;
-  font-size: 1em;
-}
-
-
-
-@keyframes blink {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-
-
-@keyframes enterFromLeft {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 0;
-  }
-}
-
-
-@keyframes comeUpFromBottom {
-  from {
-    bottom: -100%;
-  }
-  to {
-    bottom: 0;
-  }
-}
-
-
-@media screen and (max-width: 768px)
-{
-
-  .homepage {
-    font-size: 22px;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .home {
-    font-size: 22px;
-  }
-
-  .cv-container {
-    font-size: 22px;
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-
-  .CV {
-    font-size: 20px;
-  }
-
-  .res-container {
-    font-size: 22px;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .job-experience {
-    font-size: 22px;
-  }
-} */

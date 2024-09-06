@@ -9,7 +9,10 @@ body {
   background-color: #2F4F4F;
   color: white;
   font-size: 18px;
-  font-family: 'Inconsolata', monospace;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar {
@@ -44,6 +47,10 @@ body {
   margin-right: 20%;
 }
 
+.date {
+  display: flex;
+  justify-content: center;
+}
 
 .navbar-item {
   text-decoration: none;
@@ -52,6 +59,29 @@ body {
 
 .spacer {
   height: 50px;
+}
+
+.section-title {
+  margin-top: 100px;
+  margin-left: 20%; 
+  margin-right: 20%;
+}
+
+.prop-item {
+  margin-left: 50px;
+}
+
+footer {
+  margin-top: 50px;
+  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
+  text-align: center;
+}
+
+.web-link {
+  text-decoration: none;
+  color: white;
 }
 
 
@@ -64,6 +94,16 @@ body {
   }
 
   .updates-container {
+    margin-top: 50px;
+  }
+
+  .section-title,
+  .prop-item {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .section-title {
     margin-top: 50px;
   }
 }

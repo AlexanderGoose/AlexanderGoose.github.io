@@ -89,7 +89,8 @@ body {
   margin-right: 20%;
 }
 
-.prop-item {
+.prop-item,
+.update-item {
   margin-left: 50px;
 }
 

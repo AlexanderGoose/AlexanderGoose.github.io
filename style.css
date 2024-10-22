@@ -116,6 +116,33 @@ footer {
   /* color: #092215; */
 }
 
+/* what I should do is make each img it's own thing too. and when one is zoomed in on,
+the others just go away. if possible. */
+.week-9-imgs {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.wk9-img {
+  width: 25%;
+  height: auto;
+  transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.week-9-imgs:hover .wk9-img:not(:hover) {
+  width: 5%; /* Shrink the non-hovered images */
+  height: 5%;
+}
+
+.wk9-img:hover {
+  width: 80%; /* Expand the hovered image */
+}
+
+
+
 
 @media screen and (max-width: 768px) {
   .navbar-items-container,

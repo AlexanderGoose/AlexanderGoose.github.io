@@ -33,6 +33,27 @@
 
             <!-- update-hider gets no styling, it is a method to collapse each week! -->
             <div class="update-hider">
+                <i class="date">Nov 11 - Nov 17</i><br>
+                <b>What I did last week:</b>
+                <p class="update-item">Last week was again very productive. I noticed that the weather data I was getting from Open-Meteo API was inaccurate, and it led to a complete overhaul of how I got my data. I was pretty bummed at first, but I ended up learning a lot. I built a separate web scraper for each ski resort using Beautiful Soup and a few other packages. I got kicked from Copper Mountain pretty quickly, so I had to grab its information elsewhere. Then I built out a connection to the Liftie API to get lift information and again, lost access after a few hits. So, I went and scraped that information from the website pages themselves. All in all spent probably 10 hours on this. I recommend everyone inspect the code for A Basin’s website, it is so beautifully done compared to the other sites. So simple and elegant.</p>
+                <p class="update-item">Additionally, I changed the UI to display data overviews, which you can see from the picture below. This had to be done because it was becoming too complicated and nested for no reason. I wanted to simplify it as much as possible so that I can later turn it into a swift app. This UI is the rough draft that is helping me form an idea of what I want to include in a real application.</p>
+                <p class="update-item">Lastly, for a project at work, I had to look at about 200 different websites and a lot of them were either quite beautiful or very retro, as if they hadn’t been updated in 15 years. I loved them. It made me want to change up my own that evening. I changed it to a light mode, swapped the font to something more elegant, and added a background image to the homepage. I wanted it to feel like an architecture or a design studio website. You can check it out at <a href="pygoose.com" style="color: wheat;">pygoose.com</a> if you’d like. I got a bit frustrated trying to find things in the css file that had approached 800 lines, which led me to scss. It lets you split up your css into multiple files that can then get compiled into one main.css file. Super helpful and I wish I had found this sooner!</p>
+        
+                <b>What I plan to do this week:</b>
+                <p class="update-item">This week I plan to finalize the data that  I want users to be able to play with. Also, web scraping takes about 17 seconds to run. I’d like to figure out how to run it in the background every few hours if possible so the user never has to wait for it.</p>
+        
+                <b>Impediment(s) in my way:</b>
+                <p class="update-item">I’m moving this weekend so I won’t be able to spend the whole weekend coding :(</p>
+        
+                <b>Reflections on the process I used last week:</b>
+                <i>How can I make the process work better?</i>
+                <p class="update-item">Learning new tools was amazing and very motivating as a whole. It felt like quite a drag at some points due to how tedious it can be to troubleshoot web scrapers, but once I got the hang of it I had a lot of fun. I’ve always wanted to learn Beautiful Soup so I’m glad I can check that off the list but I don’t plan to go down that rabbit hole again anytime soon. I am very glad to have started up this project, but it’s gotten to the point where I’ve been a bit obsessive over it, which I tend to do with these sorts of projects. I’ll have to dial it back a bit while I finish out 2400!</p>
+                <div style="display: flex; justify-content: center;"><img clsss="ski-img" src="images/ski_report_img.jpg" alt="ski report img" style="width: 50%;"></div>
+                <br><br><br>
+            </div>
+
+
+            <div class="update-hider">
                 <i class="date">Nov 4 - Nov 10</i><br>
                 <b>What I did last week:</b>
                 <p class="update-item">Last week I continued on with 1 hour of R instruction and the remaining time was spent on my ski app. I spent most of my time learning how to start with the JSON file I made last week, load it into a Python file, and then play with it from there. I was able to assign scores based on snowfall, visibility, temperature, and wind conditions for three time periods: today, the last 3 days, and the last 7 days. I am still working on this rating system, so if there are any other ski nerds who want to take a look lmk!</p>
@@ -283,20 +304,7 @@
         <!-- TEMPLATE FOR EACH WEEK BELOW -->
 
         <!-- 
-            <i class="date">~~Week dates~~</i><br>
-            <b>What I did last week:</b>
-            <p class="update-item"></p>
-    
-            <b>What I plan to do this week:</b>
-            <p class="update-item"></p>
-    
-            <b>Impediment(s) in my way:</b>
-            <p class="update-item"></p>
-    
-            <b>Reflections on the process I used last week:</b>
-            <i>How can I make the process work better?</i>
-            <p class="update-item"></p>
-            <br><br><br>
+
         -->
 
     </div>

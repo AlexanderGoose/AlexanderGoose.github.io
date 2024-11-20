@@ -33,11 +33,28 @@
 
             <!-- update-hider gets no styling, it is a method to collapse each week! -->
             <div class="update-hider">
+                <i class="date">Nov 18 - Nov 24</i><br>
+                <b>What I did last week:</b>
+                <p class="update-item">This past week did not see much action. I was moving, taking on new responsibilities at work, and finishing up a systems lab, and I barely had enough time for it all. I did, however, watch a tutorial on Swift, but I didn’t code alongside it. Regardless, it was helpful to get a basic understanding of how it works so I can begin to dive into it soon. I also made some minor changes in the UI of my ski app such as removing the second decimal place in the temperature as that seemed unnecessary. Just some basic cleanup that didn’t require much brain power</p>
+        
+                <b>What I plan to do this week:</b>
+                <p class="update-item">This week I plan on figuring out the best way to make the app refresh itself. Last week I wrote a script that requires only a simple ‘./bootup’ which then runs 4 different web scrapers, 2 different Python files that merge and re-arrange JSON files, a Python file that normalizes the data, and then it loads up the UI. I’m happy with how simple it is to run the program, so it shouldn’t be hard to do the next step. If I have time this weekend, I’d like to start the very beginning of making the Swift app. Turns out, Python works great as a backend for Swift so this should be a fun and insightful process!</p>
+        
+                <b>Impediment(s) in my way:</b>
+                <p class="update-item">Time, once again. I will likely spend most of the weekend skiing and unpacking, which I have barely begun to do.</p>
+        
+                <b>Reflections on the process I used last week:</b>
+                <p class="update-item">Not much to reflect on given how little was accomplished. However, I knew this would likely be the case which was a big motivator in me spending somewhere between 10-15 hours on personal projects the week before. I’m looking forward to hopefully diving back into things this week if time allows.</p>
+                <br><br><br> 
+        
+            </div>
+
+            <div class="update-hider">
                 <i class="date">Nov 11 - Nov 17</i><br>
                 <b>What I did last week:</b>
                 <p class="update-item">Last week was again very productive. I noticed that the weather data I was getting from Open-Meteo API was inaccurate, and it led to a complete overhaul of how I got my data. I was pretty bummed at first, but I ended up learning a lot. I built a separate web scraper for each ski resort using Beautiful Soup and a few other packages. I got kicked from Copper Mountain pretty quickly, so I had to grab its information elsewhere. Then I built out a connection to the Liftie API to get lift information and again, lost access after a few hits. So, I went and scraped that information from the website pages themselves. All in all spent probably 10 hours on this. I recommend everyone inspect the code for A Basin’s website, it is so beautifully done compared to the other sites. So simple and elegant.</p>
                 <p class="update-item">Additionally, I changed the UI to display data overviews, which you can see from the picture below. This had to be done because it was becoming too complicated and nested for no reason. I wanted to simplify it as much as possible so that I can later turn it into a swift app. This UI is the rough draft that is helping me form an idea of what I want to include in a real application.</p>
-                <p class="update-item">Lastly, for a project at work, I had to look at about 200 different websites and a lot of them were either quite beautiful or very retro, as if they hadn’t been updated in 15 years. I loved them. It made me want to change up my own that evening. I changed it to a light mode, swapped the font to something more elegant, and added a background image to the homepage. I wanted it to feel like an architecture or a design studio website. You can check it out at <a href="pygoose.com" style="color: wheat;">pygoose.com</a> if you’d like. I got a bit frustrated trying to find things in the css file that had approached 800 lines, which led me to scss. It lets you split up your css into multiple files that can then get compiled into one main.css file. Super helpful and I wish I had found this sooner!</p>
+                <p class="update-item">Lastly, for a project at work, I had to look at about 200 different websites and a lot of them were either quite beautiful or very retro, as if they hadn’t been updated in 15 years. I loved them. It made me want to change up my own that evening. I changed it to a light mode, swapped the font to something more elegant, and added a background image to the homepage. I wanted it to feel like an architecture or a design studio website. You can check it out at <a href="https://pygoose.com/" style="color: wheat;">pygoose.com</a> if you’d like. I got a bit frustrated trying to find things in the css file that had approached 800 lines, which led me to scss. It lets you split up your css into multiple files that can then get compiled into one main.css file. Super helpful and I wish I had found this sooner!</p>
         
                 <b>What I plan to do this week:</b>
                 <p class="update-item">This week I plan to finalize the data that  I want users to be able to play with. Also, web scraping takes about 17 seconds to run. I’d like to figure out how to run it in the background every few hours if possible so the user never has to wait for it.</p>
@@ -302,10 +319,22 @@
 
 
         <!-- TEMPLATE FOR EACH WEEK BELOW -->
+        <!-- <i class="date">weeks</i><br>
+        <b>What I did last week:</b>
+        <p class="update-item"></p>
 
-        <!-- 
+        <b>What I plan to do this week:</b>
+        <p class="update-item"></p>
 
-        -->
+        <b>Impediment(s) in my way:</b>
+        <p class="update-item">!</p>
+        <p class="update-item"></p>
+        <p class="update-item"></p>
+
+        <b>Reflections on the process I used last week:</b>
+        <p class="update-item"></p>
+        <br><br><br> -->
+
 
     </div>
 

@@ -30,6 +30,29 @@
         <div class="updates">
 
             <div class="update-hider">
+                <b>What I did last week:</b>
+                <p class="update-item">Last week was dedicated mostly to my GPS tracker, as well as an abundance of LeetCode, mostly focused on Pandas. The GPS tracker was one of the toughest projects I’ve ever tried to take on, which is ironic as I assumed it would be quite easy to throw together.</p>
+	            <p class="update-item">Firstly, I tried to determine how to get the GPS data to start being collected as soon as the pi was booted, and then the Python script would also start and begin adding data to a JSON file to store the coordinates. The first issue was this required the pi to run off of a portable power bank, but it would shut down after only a few seconds. I drove to my local Micro Center and was convinced to buy a name-brand power bank, and this solved that issue. The next issue was that after some extensive coding without testing, the GPS data was no longer populated but I was unsure of what went wrong. I spent almost an entire data troubleshooting, reading documentation, watching YouTube videos, and reading every Stack Overflow article I could find. I wiped the SD card clean and started from scratch. Again, the data wasn’t loading.</p>
+                <p class="update-item">Try to guess why before moving on. The reasoning may shock you!</p>
+                <p class="update-item">Turns out that GPS units need a good signal. Who would’ve thought? I noticed this whole time that I was getting time data, which I eventually realized was being pulled by the unit, not via the computer. I found another package that let me view which satellites I was connected to and the signal statuses. Turns out, it could find them but the signal was too weak. I held up the unit and walked around the room for a bit and suddenly I got connected to 10 satellites. About 5 hours were wasted troubleshooting. Welcome to working with electronics!</p>
+                <p class="update-item">The next roadblock was that I could not make the pi start the code when powered on and then turn it off abruptly. This would’ve allowed me to just plug it into a power bank and then unplug it when I was done.  I learned about connecting to a pi with SSH, which has been great, but this too won’t work because this requires the pi to have a constant wifi signal. I’ve learned that I can buy a USB to serial connector which would let me plug it into a laptop, start the code, unplug it and ski, and then plug it back in. This should finally allow the project to work. Unfortunately, I’ve already spent way more money on this project than I had anticipated and I am unsure if I’m willing to invest any more in it. A heck of a way to spend the last week in the course!</p>
+                
+                <b>What I plan to do this week:</b>
+                <p class="update-item">This next week will be spent on the final report for this class as well as continuing to study for my interview on Friday.</p>
+
+                <b>Impediment(s) in my way:</b>
+                <p class="update-item">I’ve greatly enjoyed writing reflections on my week’s work, and I’ll be sad to no longer be held accountable for it. I may start a coding journal, where each week I continue to do this. I just went back and re-read my only posts and it was a lot of fun. Similarly, it’s been a lot of fun sharing the experience with others and watching you all create something great.</p>
+
+                <b>Reflections on the process I used last week:</b>
+                <p class="update-item">If you’re positive your code for your pi should work, it’s probably a hardware issue. Don’t make my mistake and waste most of a day when all you need to do is move the GPS dongle about 4 feet.</p>
+
+                <div class="gps-img" style="display: flex; justify-content: center;">
+                    <img src="images/gps_data.png" alt="gpd data" style="width: 80%;">
+                </div>
+                <br><br><br>
+            </div>
+
+            <div class="update-hider">
   
                 <i class="date">Nov 25 - Dec 1</i><br>
                 <b>What I did last week:</b>
